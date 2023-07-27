@@ -1,0 +1,503 @@
+
+
+body{
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 177px 1fr 177px;
+        grid-template-rows: 80px 533px 83px 920px 77px 357px;
+        grid-template-areas:
+        "head head head"
+        "profile profile profile"
+        ". square ."
+        "background1 square background2"
+        ". square ."
+        "footer footer footer"
+        ;
+    }
+
+    /* Este es el Head*/
+
+    .head{
+        background-color: #FFF;
+        grid-area: head;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #FFF;
+        grid-area: profile;
+    }
+
+    .square{
+        background-color: #0A5B74;
+        grid-area: square;
+
+    }
+
+    .background1{
+        background-color: #A3CEDB;
+        grid-area: background1;
+    }
+
+    .background2{
+        background-color: #A3CEDB;
+        grid-area: background2;
+    }
+
+    .footer{
+        border: 2px solid black;
+        background-color: #FFF;
+        grid-area: footer;
+    }   
+
+    .iconos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 92px;
+        width: 234px;
+        margin-left: 60px;
+        margin-top: 25px;
+
+    }
+
+    .hipervinculo{
+        margin-top: 27px;
+        margin-right: 60px;
+        height: 92px;
+        width: 234px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        word-spacing: 33px;
+    }
+
+    /* Este es el perfil */
+
+    .title{
+        max-width: 436px;
+        color: #21243D;
+        font-family: Heebo;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 60px;
+        margin-top: 111px;
+        margin-left: 148px;
+    }
+
+    .title-pink{
+        color: #E01E5A;
+        font-family: Heebo;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    .parrafo{
+        max-width: 497px;
+        color: var(--dark-color, #21243D);
+        font-family: Heebo;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        margin: 15px 66px 38px 148px;
+    }
+
+    .img-profile{
+        max-width: 375px;
+        max-height: 379px;
+    }
+
+    button{
+        width: 208px;
+        height: 47px;
+        margin-left: 148px;
+        background-color: var(--primary, #FF6464);
+        border-radius: 2px;
+        color: #FFF;
+        font-family: Heebo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    /* Este es el rectangulo azul*/
+    /* Componente 1*/
+
+    .component1{
+        margin-left: 51px;
+        margin-top: 53px;
+        margin-right: 70px;
+        display: grid;
+        grid-template-columns:28px 1fr 40px 83px 1fr;
+        grid-template-rows: 107px 331px;
+        grid-template-areas: 
+        "skills skills skills skills skills"
+        "left left2 line right right2";
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: #EDF7FA;
+        font-family: Heebo;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+        grid-area: skills;
+    }
+
+    .left{
+        grid-area: left;
+    }
+
+    .left2{
+        grid-area: left2;
+        margin-left: 23px;
+    }
+
+    .line{
+        width: 0px;
+        height: 330px;
+        margin-left: 50px;
+        border: 1px solid white;
+    }
+
+    .right{
+        grid-area: right;
+        margin-left: 54px;
+    }
+
+    .right2{
+        grid-area: right2;
+        margin-left: 23px;
+    }
+
+    .rectangulo{
+        border: 2px solid black;
+        margin-bottom: 28px;
+        height: 40px;
+        width: 100%;
+        color: #FFF;
+        font-family: Heebo;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .fig{
+        background-color: #1ABCFE;
+        height: 40px;
+        width: 100%;
+    }
+
+    .boo{
+        background-color: #6639B6;
+        height: 40px;
+        width: 95%;
+    }
+
+    .htm{
+        background-color: #F16529;
+        height: 40px;
+        width: 90%;
+    }
+
+    .git{
+        background-color: #000;
+        height: 40px;
+        width: 80%;
+    }
+
+    .sla{
+        background-color: #E01E5A;
+        height: 40px;
+        width: 70%;
+    }
+
+    .css{
+        background-color: #2650E6;
+        height: 40px;
+        width: 95%;
+    }
+
+    .java{
+        background-color: #FFD93D;
+        height: 40px;
+        width: 90%;
+    }
+
+    .sass{
+        background-color: #CF649A;
+        height: 40px;
+        width: 90%;
+    }
+
+    .vuejs{
+        background-color: #41B883;
+        height: 40px;
+        width: 70%;
+    }
+
+    .git{
+        background-color: #F05033;
+        height: 40px;
+        width: 50%;
+    }
+
+    .img{
+        margin-bottom: 28px;
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Componente 2*/
+
+    .line2{
+        margin-top: 52px;
+        margin-left: 49px;
+        width: 90%;
+        height: 0px;
+        border: 1px solid white;
+    }
+
+    .line3{
+        margin-left: 49px;
+        width: 145px;
+        height: 0px;
+        border: 1px solid white;
+    }
+    .component2{
+        margin-top: 43px;
+        margin-left: 49px;
+        margin-right: 77px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 166px 427px;
+        grid-template-areas: 
+        "microsoft p1"
+        "figma p2";
+    }
+
+    .experiences{
+        margin-left: 49px;
+        color: #EDF7FA;
+        font-family: Heebo;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+    }
+
+    .microsoft{
+        grid-area: microsoft;
+        padding-left: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .figma{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text1{
+        margin-left: 11px;
+        color: #EDF7FA;
+        font-family: Heebo;
+        font-size: 43px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+    }
+
+    .text2{
+        margin-top: -15px;
+        margin-left: 11px;
+        color: #FFF;
+        font-family: Heebo;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+    }
+
+    .p1{
+        grid-area: p1;
+        color: #EDF7FA;
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .p2{
+        grid-area: p2;
+        color: #EDF7FA;
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    @media (max-width: 768px) {
+    
+
+        body{
+            grid-template-columns: 13px 1fr 13px;
+            grid-template-rows: 50px 1fr 1fr 1fr 1fr 10%;
+            grid-template-areas:
+            "head head head"
+            "profile profile profile"
+            ". square ."
+            "background1 square background2"
+            ". square ."
+            "footer footer footer"
+            ;
+        }
+   
+
+        .profile{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;  
+            margin-top: 5%;   
+        }
+    
+        .img-profile{
+            max-width: 300px;
+            max-height: auto;
+        }
+
+        .head{
+            display: nones;
+        }
+
+        .iconos{
+            display: none;
+        }
+
+        .hipervinculo{
+            display: none;
+        }
+        
+        .title{
+            text-align: center;
+            color: #21243D;
+            font-family: Heebo;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 60px; 
+            margin-left: 10%;
+        }
+
+        .title-pink{
+            color: #E01E5A;
+            font-family: Heebo;
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 60px; 
+        }
+
+        .parrafo{
+            color: var(--dark-color, #21243D);
+            text-align: center;
+            font-family: Heebo;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-left: 23px;
+            margin-top: 42px;
+        }
+
+        button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: none;
+            margin-bottom: 35px;
+        }
+
+        .component1{
+            display: grid;
+            grid-template-columns: 10% 1fr;
+            grid-template-rows: 7% 1fr 1fr;
+            grid-template-areas: 
+            "skills skills"
+            "left left2"
+            "right right2";
+        }
+
+        .skills{
+            padding-bottom: 53px;
+            
+        }
+
+        .line{
+            display: none;
+        }
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            margin-right: auto;
+        }
+
+        .right{
+            display: flex;
+            flex-direction: column;
+            margin-left: 0px;
+        }
+
+        .img{
+            margin-bottom: 33px;
+        }
+
+        .experiences{
+            font-size: 28px;
+        }
+
+        .component2{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 30% 20% 30% 20%;
+            grid-template-areas: 
+            "microsoft"
+            "p1"
+            "figma"
+            "p2";   
+        }
+
+        .microsoft{
+            margin-bottom: -100px;
+        }
+
+        .figma{
+            margin-top: 100px;
+        }
+
+        .p2{
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+
+    }
